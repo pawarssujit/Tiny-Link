@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 245 245 245;
+  --foreground: 15 23 42;
+}
+
+body {
+  font-feature-settings: "rlig" 1, "calt" 1;
+  font-family: var(--font-geist-sans), system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+  color: rgb(var(--foreground));
+  background-color: rgb(var(--background));
+  min-height: 100vh;
+}
+
+@layer base {
+  * {
+    @apply border-slate-200;
+  }
+
+  body {
+    @apply text-slate-900 bg-slate-50;
+  }
+}
